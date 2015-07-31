@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="css/questions.css">
+      <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+      <title>Results</title>
+    </head>
+    
+    <body>
+      <h1> <%= @links[2] %> </h1>
+      <br>
+      
+      <div class= "playlist-frame">
+        <iframe width="560" height="315" src="<%=@links[0]%>" frameborder="0" allowfullscreen></iframe>
+        <h4>Pop</h4>
+      </div>
+      
+     
+      <div class= "playlist-frame">
+        <iframe width="560" height="315" src="<%=@links[1]%>" frameborder="0" allowfullscreen></iframe>    
+          <h4>Rap</h4>
+      </div>
+      
+      <img src="<%= @links[3] %>" alt="character" height="650" id="character">
+      
+    </body>
+  </html>

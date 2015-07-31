@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <title>Hipstream</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
+  
   <body>
-    <h1 style = "text-align: center">Welcome.</h1>
-    <h5 style = "text-align: center">If a tree falls in the woods, and nobody's around to hear it, will a hipster buy the soundtrack? </h5>
-    <br>
-    <h4 style = "text-align: center">What's your hipster soundtrack?</h4>
+    <div class="homepage-stuff">
+      <span data-text="Welcome!" class="dashed-shadow hello">Welcome!</span>
+      <br/>
+      
+      <div data-text="If a tree falls in the woods, and nobody's around to hear it," class="dashed-shadow">If a tree falls in the woods, and nobody's around to            hear it, </div> 
+      
+      <br/>
+      
+      <div class="sorta-block">
+        <form method = "GET"  action = "/questions">
+          <label>
+            <input type="image" name="submit" value="submit" src="images/hipster.png" width="143" height="249"/>
+            <br>
+            <div data-text="will a Hipster"class="dashed-shadow sorta">will a Hipster</div><br>
+            <div class="dashed-shadow dashed-shadow-text">BUY THE SOUNDTRACK?<br/><span class="shadow"></span></div>
+          </label>
+        </form>
+      </div>
+    </div>
     
-    <form method = "GET"  action = "/question1">
-      <input type = "submit" value = "Start">
-    </form>
   </body>
 </html>
